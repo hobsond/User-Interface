@@ -79,9 +79,12 @@ div.container{
 	box-shadow: 1px 0 20px salmon;
 }
 header{
+	width: 80%;
 	background:lightgray;
 	height: fit-content;
 	box-shadow: 0 0 5px black;
+	position: fixed;
+	top: 0;
 }
 header nav{
 	width: 85%;
@@ -123,13 +126,33 @@ section{
 	width: 100%;
 	margin: 0 auto;
 	background-color: slategray;
-	transition: background-color .9s;
+	transition: background-color ease-in-out .8s;
+	transition-delay: .3s;
 	padding: 5px;
 }
+
 .sec1:hover{
-	background: peachpuff;
+	background: darkslategray;
+	
 
 }
+.sec1:hover div{
+	margin-left:23% ;
+
+}
+.sec1:hover img{
+	opacity: 0;
+	margin-left: 6%;
+	width:5%; 
+	display:none;
+
+	
+}
+.sec1:hover div h1{
+	text-shadow: 0 4px 12px aqua;
+	color: white;
+}
+
 
 .sec1 div, .sec1 img{
 	display: inline-block;
@@ -139,19 +162,14 @@ section{
 	width:25%;
 	object-fit: contain;
 	box-sizing: border-box;
-	transition: width ease-in-out .7s;
-	animation-name: codeimg;
-	animation-duration: .9s;
+	transition: opacity, display,margin-left ease-in-out .7s;
+
 }
-@keyframes codeimg{
-	from{x:400}
-}
-.sec1 img:hover{
-	width: 27%;
-}
+
 
 .sec1 div {
 	width: 30%;
+	transition: margin-left ease-in-out .7s;
 	
 	
 
@@ -163,15 +181,24 @@ section{
 	font-size: 8rem;
 	font-family: 'Viaoda Libre', cursive;
 	text-shadow: 0 3px 3px black;
-	transition: color, text-shadow, .8s;
+	transition:  text-shadow  ease-in-out .3s;
+	transition-delay: .5s;
 }
 
-.sec1 div:hover h1{
-	color: aqua;
-	text-shadow: 0 0 9px;
-}
+
 
 .sec1 div button{
 	display: inline-block;
 	margin:0 0 0 43%;
+	border-radius: 10%;
+	background-color: rgb(4, 8, 39);
+	color:lightpink;
+	font-size: 17px;
+	text-transform: uppercase;
+	padding: 6%;
+	box-shadow: 0 0 10px rgb(7, 6, 6);
+	transition: background-color ease-in-out .6s;
+}
+.sec1 div button:hover{
+	background-color: rgb(90, 111, 133);
 }
