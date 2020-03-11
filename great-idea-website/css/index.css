@@ -64,3 +64,114 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+*{
+	max-width: 100%;
+}
+body{
+	box-sizing: border-box;
+	background-color: aqua;
+}
+
+div.container{
+	background-color: cornsilk;
+	width:80%;
+	margin: 0 auto;
+	box-shadow: 1px 0 20px salmon;
+}
+header{
+	background:lightgray;
+	height: fit-content;
+	box-shadow: 0 0 5px black;
+}
+header nav{
+	width: 85%;
+}
+
+header nav, header img{
+	display: inline-block;
+	
+}
+
+header img{
+	box-shadow: -4px -7px 12px black;
+}
+
+header nav a {
+	margin: 0 1%;
+	text-decoration: none;
+	display: inline-block;
+	color: white;	
+	font-family: 'Mukta', sans-serif;
+	font-size: 19px;
+
+	padding: 0 3.4%;
+	transition: color, background-color,width,font-size ease-in-out .3s;
+	text-shadow: 2px -1px 4px black;
+
+}
+header nav a:hover{
+	color:yellow;
+	font-size: 22px;
+	font-weight: bold;
+	background-color: turquoise;
+	
+}
+section{
+	margin: 5% 0;
+}
+.sec1{
+	width: 100%;
+	margin: 0 auto;
+	background-color: slategray;
+	transition: background-color .9s;
+	padding: 5px;
+}
+.sec1:hover{
+	background: peachpuff;
+
+}
+
+.sec1 div, .sec1 img{
+	display: inline-block;
+	margin: 3% 7%;
+}
+.sec1 img{
+	width:25%;
+	object-fit: contain;
+	box-sizing: border-box;
+	transition: width ease-in-out .7s;
+	animation-name: codeimg;
+	animation-duration: .9s;
+}
+@keyframes codeimg{
+	from{x:400}
+}
+.sec1 img:hover{
+	width: 27%;
+}
+
+.sec1 div {
+	width: 30%;
+	
+	
+
+}
+.sec1 div h1{
+	max-width: 60%;
+	word-wrap: normal;
+	text-align: center;
+	font-size: 8rem;
+	font-family: 'Viaoda Libre', cursive;
+	text-shadow: 0 3px 3px black;
+	transition: color, text-shadow, .8s;
+}
+
+.sec1 div:hover h1{
+	color: aqua;
+	text-shadow: 0 0 9px;
+}
+
+.sec1 div button{
+	display: inline-block;
+	margin:0 0 0 43%;
+}
